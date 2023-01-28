@@ -1,0 +1,28 @@
+.header {
+	/* flex: 1; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	padding: 0 10px;
+	background-color: green;
+  img{
+    height: 90px;
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    li{
+      margin: 0 5px;
+      color: #fff;
+      &:hover{
+        background-color: red;
+      }
+    }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+}

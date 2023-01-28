@@ -1,0 +1,1 @@
+export const LOGO_IMG_URL = 'https://image.pngaaa.com/439/5787439-middle.png';
