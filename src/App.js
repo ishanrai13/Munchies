@@ -7,6 +7,7 @@ import Footer from './Footer/Footer';
 import AboutUs from './AboutUs/AboutUs';
 import Cart from './Cart/Cart';
 import Profile from './Profile/Profile';
+import Menu from './Menu/Menu';
 
 import '../index.css';
 
@@ -18,31 +19,35 @@ const App = () => {
 			<Footer />
 		</>
 	);
-}
+};
 
 export const router = createBrowserRouter([
 	{
-		path: "/",
+		path: '/',
 		element: <App />,
 		children: [
 			{
-				path: "/",
+				path: '/',
 				element: <Home />,
 			},
 			{
-				path: "about",
+				path: 'about',
 				element: <AboutUs />,
 			},
 			{
-				path: "cart",
+				path: 'cart',
 				element: <Cart />,
 			},
 			{
-				path: "profile",
+				path: 'profile',
 				element: <Profile />,
 			},
-		]
-	}
+			{
+				path: 'restaurant/:id',
+				element: <Menu />,
+			},
+		],
+	},
 ]);
 
 export default App;

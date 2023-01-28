@@ -1,0 +1,13 @@
+.cardsContanier{
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .card{
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    opacity: 0.2;
+    margin: 10px;
+  }
+}

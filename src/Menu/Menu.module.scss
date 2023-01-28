@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+	.imgContainer {
+		// display: flex;
+		// flex-direction: column;
+		margin-top: 20px;
+		img {
+			height: 500px;
+			width: 500px;
+		}
+	}
+}

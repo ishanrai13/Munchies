@@ -10,7 +10,7 @@ body{
   /* flex: 30; */
   flex: 1;
   padding: 0 10px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .footer{
   /* flex: 2; */
