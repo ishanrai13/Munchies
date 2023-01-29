@@ -8,7 +8,7 @@ import AboutUs from './AboutUs/AboutUs';
 import Cart from './Cart/Cart';
 import Profile from './Profile/Profile';
 import Menu from './Menu/Menu';
-
+// import {fetching} from './hooks/useRestaurantList'
 import '../index.css';
 
 const App = () => {
@@ -29,6 +29,8 @@ export const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <Home />,
+				// loader: () => fetching(),
+				// errorElement: <>error</>,
 			},
 			{
 				path: 'about',

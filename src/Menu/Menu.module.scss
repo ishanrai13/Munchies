@@ -1,5 +1,5 @@
 .container {
-  display: flex;
+	display: flex;
 	.itemsListContanier {
 		display: flex;
 		flex-direction: column;
@@ -9,5 +9,49 @@
 		margin-top: 20px;
 		min-width: 600px;
 		max-width: 800px;
+		.searchContanier {
+			display: flex;
+			justify-content: flex-end;
+			// width: 300px;
+			.searchInput {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+				border: 1px solid rgba(0, 0, 0, 0.04);
+				height: 40px;
+				background-color: #fff;
+				width: 300px;
+				.inputIcon {
+					display: flex;
+					align-items: center;
+					margin-left: 10px;
+					margin-right: 10px;
+					img {
+						width: 20px;
+					}
+				}
+				input {
+					flex: 1;
+					border: none;
+					caret-color: green;
+					&:focus {
+						box-shadow: none;
+						outline: none;
+					}
+				}
+			}
+			button {
+				background-color: #04aa6d;
+				color: white;
+				font-size: 18px;
+				padding: 6px 15px;
+				display: block;
+				border-radius: 5px;
+				cursor: pointer;
+				border: none;
+				margin-left: 10px;
+			}
+		}
 	}
 }

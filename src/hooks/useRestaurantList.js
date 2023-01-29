@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
 import { RESTAURANTS_LIST_URL } from '../Utils/constants';
 
+// export const fetching = async () => {
+// 	try{
+// 		// throw new Response("Not Found", { status: 404 });
+// 		const res = await fetch(RESTAURANTS_LIST_URL);
+// 		return res;
+// 	}catch(err){
+
+// 	}
+// }
 const useRestaurantList = () => {
 	const [restaurantList, setRestaurantList] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
