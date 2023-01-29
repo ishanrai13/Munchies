@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import Shimmer from '../Shimmer/Shimmer';
 import useRestautantInfo from '../hooks/useRestaurantInfo';
-import { CLOUDINARY_IMAGE_URL } from '../Utils/constants';
 import * as s from './Menu.module.scss';
+import RestaurantCard from '../RestaurantCard/RestaurantCard';
+import MenuCard from '../MenuCard/MenuCard';
 
 const Menu = () => {
 	const { id } = useParams();
@@ -15,17 +16,12 @@ const Menu = () => {
 		<Shimmer />
 	) : (
 		<div className={s.container}>
-			<div className={s.imgContainer}>
-				<img
-					src={`${CLOUDINARY_IMAGE_URL}/${restaurantInfo.cloudinaryImageId}`}
-				/>
-				<h3>{restaurantInfo.name}</h3>
-			</div>
-			<ul>
+			<RestaurantCard restaurantInfo={restaurantInfo} nonClickable/>
+			<div className={s.itemsListContanier}>
 				{Object.values(restaurantInfo?.menu?.items).map((item) => (
-					<li key={item.id}>{item.name}</li>
+					<MenuCard menuItem={item} />
 				))}
-			</ul>
+			</div>
 		</div>
 	);
 };

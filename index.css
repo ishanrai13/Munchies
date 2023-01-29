@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
 }
 #root {
   display: flex;
@@ -10,7 +11,17 @@ body{
   /* flex: 30; */
   flex: 1;
   padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 1200px;
+  min-width: 660px;
+  letter-spacing: 0;
+  line-height: 1.2;
   /* background-color: yellow; */
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 .footer{
   /* flex: 2; */
@@ -19,5 +30,7 @@ body{
   align-items: center;
   height: 150px;
   padding: 0 10px;
-  background-color: red;
+  background-color: black;
+  color: #fff;
+  margin-top: 20px;
 }

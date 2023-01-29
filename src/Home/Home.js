@@ -17,6 +17,7 @@ const Home = () => {
 						key={restaurant.data.id}
 					>
 						<RestaurantCard
+							restaurantInfo={restaurant?.data}
 							imgUrl={restaurant?.data?.cloudinaryImageId}
 							name={restaurant?.data?.name}
 							tags={restaurant?.data?.cuisines}

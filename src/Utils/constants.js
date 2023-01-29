@@ -1,4 +1,3 @@
-export const LOGO_IMG_URL = 'https://image.pngaaa.com/439/5787439-middle.png';
 export const RESTAURANT_INFO_URL =
 	'https://www.swiggy.com/dapi/menu/v4/full?lat=26.9124336&lng=75.7872709&menuId=';
 export const RESTAURANTS_LIST_URL =

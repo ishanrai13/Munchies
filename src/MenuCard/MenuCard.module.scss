@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 1px solid #7a7b81;
+	.infoContainer {
+    h4{
+      margin: 15px 0;
+    }
+		h5 {
+			color: #686b78;
+			font-size: 13px;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+		.description {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			color: #686b78;
+			font-size: 13px;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+	}
+	.imageContainer {
+		img {
+			height: 100px;
+			border-radius: 8px;
+		}
+	}
+}
