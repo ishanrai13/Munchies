@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import LOGO_IMG_URL from '../assets/img/logo.png';
+import LOGO_IMG_URL from '../../assets/img/logo.png';
 import * as s from './Header.module.scss';
 
 const Header = () => {

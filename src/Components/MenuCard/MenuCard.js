@@ -1,6 +1,6 @@
 import * as s from './MenuCard.module.scss';
-import { CLOUDINARY_IMAGE_URL } from '../Utils/constants';
-import DEFAULT_DISH_IMG from '../assets/img/default-dish.webp';
+import { CLOUDINARY_IMAGE_URL } from '../../Utils/constants';
+import DEFAULT_DISH_IMG from '../../assets/img/default-dish.webp';
 
 const MenuCard = ({ menuItem = {} }) => {
 	const { name, cloudinaryImageId, price, description } = menuItem;

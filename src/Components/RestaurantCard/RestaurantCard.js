@@ -1,6 +1,6 @@
 import * as s from './RestaurantCard.module.scss';
-import { CLOUDINARY_IMAGE_URL } from '../Utils/constants';
-import { compressStringLength } from '../Utils/utilFuntions';
+import { CLOUDINARY_IMAGE_URL } from '../../Utils/constants';
+import { compressStringLength } from '../../Utils/utilFuntions';
 const RestaurantCard = ({ restaurantInfo = {}, nonClickable = false }) => {
 	const {
 		cloudinaryImageId = '',

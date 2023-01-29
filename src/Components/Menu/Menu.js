@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 import Shimmer from '../Shimmer/Shimmer';
-import useRestautantInfo from '../hooks/useRestaurantInfo';
+import useRestautantInfo from '../../hooks/useRestaurantInfo';
 import * as s from './Menu.module.scss';
 import RestaurantCard from '../RestaurantCard/RestaurantCard';
 import MenuCard from '../MenuCard/MenuCard';
 import { useState, useEffect } from 'react';
-import searchIcon from '../assets/img/search.svg';
+import searchIcon from '../../assets/img/search.svg';
 
 const Menu = () => {
 	const { id } = useParams();

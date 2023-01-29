@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import RestaurantCard from '../RestaurantCard/RestaurantCard';
 import Shimmer from '../Shimmer/Shimmer';
-import useRestaurantList from '../hooks/useRestaurantList';
+import useRestaurantList from '../../hooks/useRestaurantList';
 import * as s from './Home.module.scss';
 
 const Home = () => {

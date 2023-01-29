@@ -1,13 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import Header from './Header/Header';
-import Body from './Body/Body';
-import Home from './Home/Home';
-import Footer from './Footer/Footer';
-import AboutUs from './AboutUs/AboutUs';
-import Cart from './Cart/Cart';
-import Profile from './Profile/Profile';
-import Menu from './Menu/Menu';
+import Header from './Components/Header/Header';
+import Body from './Components/Body/Body';
+import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
+import AboutUs from './Components/AboutUs/AboutUs';
+import Cart from './Components/Cart/Cart';
+import Profile from './Components/Profile/Profile';
+import Menu from './Components/Menu/Menu';
 // import {fetching} from './hooks/useRestaurantList'
 import '../index.css';
 
